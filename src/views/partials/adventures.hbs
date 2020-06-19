@@ -1,0 +1,26 @@
+<ul class="quests">
+    {{#each adventures}}
+        <li class="quest_item">
+            <a href="/scene/{{sceneId}}">
+                {{#if img}}
+                    <img class="quest_image" src="{{img}}" alt="{{name}}">
+                {{^}}
+                    <img class="quest_image" src="{{staticBasePath}}/default-picture.png" alt="{{name}}">
+                {{/if}}
+            </a>
+            <div class="quest_information">
+                <a class="quest_name" href="/scene/{{sceneId}}">{{name}}</a>
+                {{#if description}}
+                 <p class="quest_description">{{description}}</p>
+                {{/if}}
+                <ul class="quest_tags">
+                    {{#each tags}}
+                        <li class="quest_tag_item">
+                            <a class="quest_tag" href="/adventures/{{engName}}">#{{ruName}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </li>
+    {{/each}}
+</ul>

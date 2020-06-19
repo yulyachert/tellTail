@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="{{ meta.charset }}" />
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ meta.description }}" />
+    <link rel="shortcut icon" href="{{ staticBasePath }}favicon.png" type="image/png" />
+    <link rel="stylesheet" href="{{ staticBasePath }}scene.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="{{ staticBasePath }}partials.css" media="screen" type="text/css"/>
+</head>
+<body>
+{{>header}}
+<main>
+    <div class="image_description">
+        {{#if scene.img}}
+            <img class="image_description_scene_image" src="{{scene.img}}" alt="сцена">
+            <p class="image_description_scene_description_{{scene.angleId}}">{{scene.description}}</p>
+        {{^}}
+            <p class="image_description_scene_description_left-top">{{scene.description}}</p>
+        {{/if}}
+    </div>
+    {{#if scene.achievements.length}}
+        <ul class="achievements">
+            {{#each scene.achievements}}
+                <li class="achievements_achievement">
+                    <img class="achievements_achievement_image" src="{{img}}" alt={{name}}>
+                    <div class="achievements_achievement_description">
+                        <p class="achievements_get_achievement_text">{{../gettingAchievement}}</p>
+                        <p class="achievements_achievement_name">{{name}}</p>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+    {{#if scene.activities.length}}
+        <ul class="activities">
+            {{#each scene.activities}}
+                <li class="activities_button">
+                    <a class="activities_ref" href="{{nextSceneId}}">{{name}}</a>
+                </li>
+            {{/each}}
+        </ul>
+        {{^}}
+        <a class="activities_button_restart" href="/scene/{{id}}">{{restart}}</a>
+    {{/if}}
+</main>
+</body>
+</html>

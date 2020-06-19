@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="{{ meta.charset }}" />
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ meta.description }}" />
+    <link rel="shortcut icon" href="{{ staticBasePath }}favicon.png" type="image/png" />
+    <link rel="stylesheet" href="{{ staticBasePath }}adventure.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="{{ staticBasePath }}partials.css" media="screen" type="text/css"/>
+</head>
+<body>
+    {{>header}}
+    <main>
+        {{>adventures}}
+    </main>
+    <script src="{{ staticBasePath }}creationOfClickEvent.js"></script>
+    <script src="{{ staticBasePath }}creationOfPopstateEvent.js"></script>
+    <script src="{{ staticBasePath }}creationOfTagList.js"></script>
+    <script src="{{ staticBasePath }}creationOfAdventureList.js"></script>
+    <script src="{{ staticBasePath }}creationOfElements.js"></script>
+</body>
+</html>

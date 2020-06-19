@@ -1,0 +1,125 @@
+main {
+    padding: 59px 45px 78px 45px;
+}
+
+.image_description_scene_image {
+    width: 100%;
+    height: 482px;
+    object-fit: cover;
+}
+
+.activities {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.activities_button {
+    padding: 20px 46px;
+    margin: 78px 52px 0 0;
+    background-color: #555;
+    font-size: 34px;
+    font-family: Roboto, sans-serif;
+    list-style: none;
+}
+
+.activities_ref {
+    color: #fff;
+    text-decoration: none;
+}
+
+.image_description {
+    position: relative;
+}
+
+.image_description_scene_description_left-top,
+.image_description_scene_description_right-top,
+.image_description_scene_description_left-bottom,
+.image_description_scene_description_right-bottom {
+    width: 50%;
+    font-size: 22px;
+    color: #fff;
+    font-family: Gabriela, sans-serif;
+    position: absolute;
+    z-index: 1;
+}
+
+.image_description_scene_description_left-bottom {
+    bottom: 30px;
+    left: 30px;
+}
+
+.image_description_scene_description_right-bottom {
+    bottom: 30px;
+    right: 30px;
+    text-align: right;
+}
+
+.image_description_scene_description_left-top {
+    top: 30px;
+    left: 30px;
+}
+
+.image_description_scene_description_right-top {
+    top: 30px;
+    right: 30px;
+    text-align: right;
+}
+.achievements {
+    padding: 0;
+    margin: 0 0 60px 0;
+}
+
+.achievements_achievement {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+/*.achievement-info {*/
+/*    vertical-align: top;*/
+/*}*/
+
+/*.achievements_achievement_image,*/
+/*.achievements_achievement_description {*/
+/*    display: inline-block;*/
+/*}*/
+
+.achievements_achievement_image {
+    border-radius: 50%;
+    width: 147px;
+    height: 147px;
+    margin: 27px 21px 0 17px;
+}
+
+.achievements_achievement_description {
+    font-family: Gabriela, sans-serif;
+}
+
+.achievements_get_achievement_text {
+    font-size: 30px;
+    color: #000;
+    margin: 0;
+}
+
+.achievements_achievement_name {
+    font-size: 48px;
+    color: #000;
+    margin: 0;
+}
+
+.activities_button_restart {
+    display: block;
+    width: 297px;
+    padding: 20px 46px;
+    text-align: center;
+    background-color: #555;
+    font-size: 34px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    margin: 0 auto;
+}

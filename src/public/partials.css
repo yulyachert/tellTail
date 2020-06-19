@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400%7CGabriela&display=swap%27');
+
+header {
+    border-bottom: solid 1px #959393;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+.logo_image {
+    font-size: 60px;
+}
+
+.logo_image {
+    margin: 30px 7px 27px 57px;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    margin: 35px auto 24px 0;
+    color: #000;
+}
+
+.logo_text_another_color {
+    color: #f49ec4;
+    font-weight: 400;
+}
